@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onresize="fun()">
+    <h2>The window width and height is displayed when window is re sized. </h2>
+    <p id="para" ></p>
+    <p>Window is in <spann id="sn"> 0 </spann> times </p>
+
+    <script>
+
+var i =0;
+        function fun()
+        {
+            var res = "width =" + window.outerWidth +"<br> <hr>" + "height =" + window.outerHeight;
+            document.getElementById("para").innerHTML = res;
+            
+            var res1 = i+=1;
+            document.getElementById("sn").innerHTML = res1;
+
+        }
+    </script>
+</body>
+</html>

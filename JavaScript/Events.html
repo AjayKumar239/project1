@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="OnLoading()">
+     <button onclick="OnClickButton()">Click Me</button>
+   <p id="para1">Text Before button is click</p> 
+
+    <!-- <button onmouseover="OnClickButton()">Click Me</button>
+    <p id="para1">Text Before button is click</p> -->
+
+    <!-- <button onmouseout="OnClickButton2()">Click Me</button>
+    <p id="para2">Text Before button is click</p> -->
+
+    <!-- key events -->
+    <input type="text" onkeydown="OnKeyDownInput()">
+    <!-- <p id="para2">Text Before button is click</p> -->
+    <form onsubmit="OnSubmit()">
+        <input type="submit">
+    </form>
+   
+
+
+
+    <script>
+        // function OnClickButton() {
+        //     //     console.log("button is Clicked ");
+        //     //    document.write("button is Clicked ");
+        //     const p1 = document.getElementById("para1");
+        //     p1.innerHTML = "The button is clicked ";
+
+        // }
+        // function OnClickButton2() {
+        //     //     console.log("button is Clicked ");
+        //     //    document.write("button is Clicked ");
+        //     const p1 = document.getElementById("para2");
+        //     p1.innerHTML = "The button is clicked ";
+
+        // }
+
+
+        function OnKeyDownInput() {
+            //   console.log("Input  is entered ");
+            console.log("clicked ");
+            //    document.write("button is Clicked ");
+            // const p2 = document.getElementById("para2");
+            //  p2.innerHTML = event.target.value;
+            // p1.innerHTML = "The button is clicked ";
+
+        }
+
+        function OnSubmit()
+        {
+            window.alert("Form Submited ");
+        }
+
+        function OnLoading()
+        {
+            console.log("Window is Loading ");
+        }
+    </script>
+
+</body>
+
+</html>

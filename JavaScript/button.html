@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="back">
+    <div class="main">
+        <button class="btn"  id="btn" onclick="f1()">Click Me</button>
+    </div>
+    <style>
+        body{
+
+             background-color: aqua;
+        }
+    .main {
+        /* align-items: center; */
+        align-content: center;
+    }
+
+        .btn{
+            padding: 50px;
+             margin-top:250px; 
+             margin-left:450px; 
+            /* align-content: center; */
+            background-color: blue;
+            border: 0px;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+            const btnbgcol = document.getElementById("btn");
+            const dbgbgcol = document.getElementById("back");
+            // const btnbgoncol = "aqua";
+            // const btnbgoffcol = "blue";
+            // const bdnbgoffcol = "blue";
+
+            let clickonBtn = false;
+            function f1()
+            {
+               // clickonBtn = !clickonBtn;
+                btnbgcol.style.backgroundColor="aqua";
+                dbgbgcol.style.backgroundColor="blue";
+                //btnbgcol.style.margin ="50%";
+                //change();
+            }
+            // function change()
+            // {
+            //     btnbgcol.style.backgroundColor = clickonBtn ? btnbgoncol :btnbgoffcol;
+            //     dbgbgcol.style.backgroundColor = clickonBtn ?  bdnbgoffcol :btnbgoffcol;
+
+            //     btnbgcol.innerHTML = clickonBtn ? "Click Me again" : "Click Me";
+            // }
+    </script>
+
+</body>
+</html>

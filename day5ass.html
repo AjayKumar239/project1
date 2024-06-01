@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="ass5.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <div class="inputCounter">
+            <label for="name">Name </label><br>
+            <input class="textInput" type="text" id="name" placeholder="Enter name"><br><br>
+
+            <label for="email">Email </label><br>
+            <input class="textInput" type="text" id="email" placeholder="Enter Email"><br><br>
+
+            <label for="pass">Password </label><br>
+            <input type="password" id="pass" placeholder="Enter the Password"><br><br>
+
+            <input type="checkbox" id="check" name="check" value="check" />
+            <label for="check">Show Password</label>
+
+        </div>
+
+        <div>
+            <input id="button" type="submit"  onclick="f1()" value="SIGN IN" />
+            <!-- <button onclick="f1()">Sign In</button> -->
+        </div>
+
+        <p>Forgot <span class="para">Username / Password?</span></p>
+        <p>Don't have a account?<span class="para"> Sign up </span></p>
+
+  </div>
+
+  <script>
+    function f1()
+    {
+      var nam = document.getElementById('name');
+
+      if(nam == '')
+      {
+        window.alert("Enter name :")
+      }
+    }
+
+
+</script>
+</body>
+</html>
+
+

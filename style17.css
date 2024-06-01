@@ -1,0 +1,121 @@
+*{
+    margin:3px;
+    padding:0;
+  }
+  
+  .header-container {
+    display:flex;
+    justify-content: space-between;
+    
+  }
+  .logo-container {
+    display:flex;
+    align-items:center;
+    gap:5px;
+  }
+  img {
+    width:40px;
+    height:30px;
+  }
+  .menu-container {
+    display:flex;
+    align-items:center;
+    gap:20px;
+    color:#4f5250;
+    font-size:12px;
+  }
+  
+  .button-container {
+    display: flex;
+    align-items:center;
+   
+  }
+
+
+
+/* /* body {
+  display:flex;
+  
+} 
+.header-container {
+  dispaly:flex;
+  background-color:white;
+   justify-content: space-between;
+  
+}
+.logo-container {
+  display:flex;
+  align-content:center;
+  
+}
+img {
+  width:40px;
+  height:40px;
+  border:radius-pill;
+  }
+.menu-container {
+   display:flex;
+    align-items:center;
+    gap:20px;
+    color:#be7fe3;
+    font-size:12px;
+ }
+.btn-container {
+  display: flex;
+    align-items:center;
+  
+ }*/
+.book-btn {
+   background-color:#0bba31;
+  color:white;
+  font-weight:bold;
+  border:0px;
+  padding:10px;
+  } 
+/* .main-container {
+  margin-top:10px;
+  background-color:#e6f4f5;
+  height:440px;
+  
+} */
+h1{
+  width:350px;
+   margin-left:15px;
+/*   margin-top:50px; */
+}
+p {
+   width:550px;
+  margin-left:15px;
+/*    margin-top:10px; */
+  
+}
+.our-btn{
+  background-color:#0bba31;
+  color:white;
+  border:0px;
+  padding:15px;
+}
+.learn-btn{
+  background-color:white;
+  color:black;
+  border:0px;
+  padding:15px;
+}
+.buttonmain-container {
+  gap:15px;
+  margin-left:15px;
+}
+.main {
+  background-image:url("https://as2.ftcdn.net/v2/jpg/02/98/84/37/1000_F_298843753_q8TxwI8fjnwLcSs40g06rG4b5klL8sGp.jpg");
+/*   height:440px; */
+  position:relative;
+  background-repeat:no-repeat;
+  padding-top:150px;
+/*    padding-bottom:150px; */
+   padding-left:15px;
+   padding-right:15px;
+  height:65vh;
+/*   width:600vh; */
+  background-size:100%;
+  
+}

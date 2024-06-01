@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="call.css">
+</head>
+
+<body>
+    <!-- <table class="main-tab"> -->
+    <table>
+        <tr>
+            <td class="row1">
+                <!-- <h2 id="val" value="0"></h2> -->
+                <input class="row1" type="text" id="display" value="">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="row2">
+                <button class="btn" onclick="addToDisplay('+')">+</button>
+                <button class="btn" onclick="addToDisplay('-')">-</button>
+                <button class="btn" onclick="addToDisplay('*')">*</button>
+                <button class="btn" onclick="addToDisplay('%')">%</button>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="row2">
+                <button class="btn" onclick="addToDisplay('7')">7</button>
+                <button class="btn" onclick="addToDisplay('8')">8</button>
+                <button class="btn" onclick="addToDisplay('9')">9</button>
+                <button class="btn-eql" onclick="calculateToDisplay()">=</button>
+
+            </td>
+
+        </tr>
+
+        <tr>
+            <td class="row2">
+                <button class="btn" onclick="addToDisplay('4')">4</button>
+                <button class="btn" onclick="addToDisplay('5')">5</button>
+                <button class="btn" onclick="addToDisplay('6')">6</button>
+                <button class="btn-eql" onclick="calculateToDisplay()">=</button>
+                <!-- <button class="btn">=</button> -->
+
+            </td>
+
+        </tr>
+
+        <tr>
+            <td class="row2">
+                <button class="btn" onclick="addToDisplay('1')">1</button>
+                <button class="btn" onclick="addToDisplay('2')">2</button>
+                <button class="btn" onclick="addToDisplay('3')">3</button>
+                <button class="btn-eql" onclick="calculateToDisplay()">=</button>
+                <!-- <button class="btn">=</button> -->
+
+            </td>
+
+        </tr>
+        <tr>
+            <td class="row2">
+                <button class="btn" onclick="addToDisplay('0')">0</button>
+                <button class="btn" onclick="addToDisplay('.')">.</button>
+                <button class="btn" onclick="clearToDisplay('4')">AC</button>
+                <button class="btn-eql" onclick="calculateToDisplay()">=</button>
+
+
+            </td>
+
+        </tr>
+
+
+    </table>
+
+    <script>
+        function addToDisplay(value) {
+            document.getElementById("display").value += value;
+
+        }
+        function clearToDisplay() {
+            document.getElementById("display").value = '';
+
+        }
+
+        function calculateToDisplay() {
+
+
+            try {
+                var res = eval(document.getElementById("display").value);
+                document.getElementById("display").value = res;
+            }
+            catch (error) {
+                alert("Invalid expression");
+                clearToDisplay();
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

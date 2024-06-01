@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        
+        body{
+            background-color: blanchedalmond;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+
+        .btn {
+            padding: 30px;
+        }
+    </style>
+
+<body>
+    <!-- <div>
+       
+            const a =30;
+            const b =10;
+           const c =100;
+            if( a > b && a > c)
+            {
+                console.log(a);
+            }
+           else if( a < b && b>c)
+            {
+                console.log(b);
+            }
+            else
+            {
+                console.log(c);
+            }
+    
+    
+            const val = a>b?a : b;
+            console.log(val); 
+
+    </div>  -->
+
+    <div class="container" id="main">
+        <img id="bulbimg"
+            src="https://media.istockphoto.com/id/1069450406/vector/light-bulb-line-icon-vector-isolated-on-white-background-flat-style-for-graphic-design.jpg?s=612x612&w=0&k=20&c=guqoNUouaD4D5zxmhT5u20KEhF2X9eeqcWJX0vd77ls=">
+        <button class="btn" id="switch" onclick="f1()">Switch On</button>
+
+    </div>
+    <script>
+        let mainele = document.getElementsByTagName("body");
+        let imageele = document.getElementById("bulbimg");
+        let switchElement = document.getElementById("switch");
+
+        //  chages
+        const bulbOnbg = "black";
+        const bulbOffbg = "white";
+        const bulbOnbgimg = "https://media.istockphoto.com/id/1149246206/vector/light-bulb-with-rays-lighting-electric-lamp-creative-idea-solution-thinking-concept.jpg?s=612x612&w=0&k=20&c=MKFLk7zJSL1LcS1E91ujw8hnoMdAj5scM_QOEhiIkgI=";
+        const bulbOffbgimg = "https://media.istockphoto.com/id/1069450406/vector/light-bulb-line-icon-vector-isolated-on-white-background-flat-style-for-graphic-design.jpg?s=612x612&w=0&k=20&c=guqoNUouaD4D5zxmhT5u20KEhF2X9eeqcWJX0vd77ls=";
+
+        let isBulbOn = flase;
+
+        function f1() {
+            isBulbOn = !isBulbOn;
+            change();
+        }
+        function change() {
+            mainele.style.backgroundColor = isBulbOn ? bulbOnbg : bulbOffbg  ;
+            imageele.src = isBulbOn ? bulbOnbgimg : bulbOffbgimg;
+            switchElement.innerHTML = isBulbOn ? "switch oFF" : "switch On";
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+

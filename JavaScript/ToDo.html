@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <input type="text" id="selector" placeholder="Add TODO items ">
+        <button class="btn" onclick="todo()">Add</button>
+        <ul id="items"></ul>
+    </div>
+    <script>
+        function todo() {
+            var todo = document.getElementById("selector");
+            var toadd = document.getElementById("btn");
+            var todotext = todo.value;
+            if (todotext.trim() === '') {
+                alert("first add task");
+            }
+            else {
+                var items = document.getElementById("items");
+                var items1 = document.createElement("li");
+
+                var deleteButton = document.createElement("items");
+                items1.textContent = todo.value;
+                items.appendChild(items1);
+                
+                deleteButton.textContent = "*";
+                deleteButton.classList.add("deleteButton");
+                deleteButton.addEventListener("click", function () {
+                    items.removeChild(li);
+                });
+
+
+            }
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

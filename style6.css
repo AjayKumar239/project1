@@ -1,0 +1,30 @@
+body{
+    background-color: aqua;
+}
+.container {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    /* margin: 50px; */
+    /* auto will alin in center but not from top to get form top just give some value  */
+    margin:50px auto;
+    padding: 40px;
+    /* margin:10% auto;  it will in percentage by hole page  */
+
+    /* margin:50px ;(top right left bottom ); if not use auto  */
+   
+}
+div.container2 {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    margin:50px auto;
+    padding: 40px;
+}
+div.sub {
+    background-color: rgb(201, 36, 36);
+    height: 150px;
+    width: 100px;
+    margin:50px auto;
+    padding: 50px;
+}

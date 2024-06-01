@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ol id="val">
+    
+    </ol>
+    <a id="anc">
+
+    </a>
+    <button class="btn" style="width: auto; height:20px"></button>
+
+    <script>
+        const Lisele = document.getElementById("val");
+        const anc = document.getElementById("anc");
+        const butn = document.getElementsByClassName("btn");
+         for(let i=1; i<5; i++)
+        // let i=0;
+        // while(i <= 6)
+        {
+            const list1 = document.createElement("h1");
+            const list2 =document.createElement("p");
+           // const list3 = document.createElement("button");
+
+            list1.innerHTML = `number is ${i}`;
+            list2.innerHTML = `Using javascript writing contant in html`;
+           // list3.innerHTML = `Button is ${i}`;
+            
+           
+            Lisele.appendChild(list1);
+            anc.appendChild(list2);
+         //   butn.appendChild(list3);
+
+           // i++;
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="paraclass" id="para">para element acessing by ids </p>
+    <p class="paraclass" id="para">para element acessing by class </p>
+    <script>
+
+        // for acessing id element
+        // const paraele = document.getElementById("para");
+        // console.log(paraele);
+        // paraele.innerHTML = "changed content";
+        // paraele.style.color="red";
+        // paraele.style.textAlign="center";
+        // paraele.style.margin="50%";
+        // paraele.style.backgroundColor="green";
+
+        // for acessing class element
+        const paraEle = document.getElementsByClassName("paraclass");
+        // console.log(paraEle[0]);
+        // paraEle[1].setAttribute("class","newClass");
+        //  console.log(paraEle[0]);
+
+          // for acessing tag element
+          const paraEle2 = document.getElementsByTagName("p");
+        //  console.log(paraEle2[1]);
+
+          // for acessing QuerySelector() 
+        //   const qs1 = document.querySelector("#para");
+        // const qs1 = document.querySelectorAll(".paraclass");
+        const qs1 = document.querySelectorAll("p");
+        //   console.log(qs1);
+
+
+        //   Creatring elements adding elements doynamically
+
+        const para = document.getElementById("para");
+        const p1 = document.createElement("p");
+        p1.innerHTML = "Creating adding content in js Doynamically";
+        para.appendChild(p1);
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
